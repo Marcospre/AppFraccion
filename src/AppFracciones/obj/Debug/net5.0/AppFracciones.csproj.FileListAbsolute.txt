@@ -1,0 +1,12 @@
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\bin\Debug\net5.0\AppFracciones.deps.json
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\bin\Debug\net5.0\AppFracciones.dll
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\bin\Debug\net5.0\ref\AppFracciones.dll
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\bin\Debug\net5.0\AppFracciones.pdb
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.csproj.AssemblyReference.cache
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.AssemblyInfoInputs.cache
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.AssemblyInfo.cs
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.csproj.CoreCompileInputs.cache
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.dll
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\ref\AppFracciones.dll
+c:\Users\Marcos\Documents\DAW\ED\AppFraccion\src\AppFracciones\obj\Debug\net5.0\AppFracciones.pdb
