@@ -32,6 +32,15 @@ namespace AppFracionTest
            assertEqualFrac(res,esp);
         }
         [Fact]
+        public void Simplficar()
+        {
+            var a=new Fracciones(2,4);
+            String res=calcu.fracReducida(a);
+            Strinf esp="1/2";
+            assert.Equal(res,esp);
+            
+        }
+        [Fact]
         public void esProp()
         {
             var a=new Fracciones(2,3);

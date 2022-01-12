@@ -90,7 +90,7 @@ namespace AppConsole
         private void simplificarFraccion(){
             Fracciones frac = consFrac(1);
             calculadora.fracReducida(frac);
-            memoria.Insert(0,frac);
+            /*memoria.Insert(0,frac);*/
             vista.Mostrar("Resultado "+ frac.ToString(),ConsoleColor.Green);
             cantidad_operaciones++;
         }
@@ -109,7 +109,7 @@ namespace AppConsole
         }
 
         private Fracciones consFrac(int i){
-            var num=vista.TryObtenerDatoDeTipo<int>($"Numerdaor fraccion{i}");
+            var num=vista.TryObtenerDatoDeTipo<int>($"Numerador Fraccion {i}");
             var denom = vista.TryObtenerDatoDeTipo<int>($"Denominador Fraccion {i} ");
             return new Fracciones(num,denom);
         }
