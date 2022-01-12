@@ -1,12 +1,9 @@
 ﻿using System;
+using AppFracciones;
+using AppConsole;
 
-namespace AppConsole
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+var view = new Vista();
+var calculadora= new CalcuFrac();
+var controlador=new controlador(view,calculadora);
+
+controlador.Run();

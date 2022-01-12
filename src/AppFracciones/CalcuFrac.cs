@@ -31,6 +31,26 @@ namespace AppFracciones{
 
             return fracmulti;
         }
+        public string fracReducida(Fracciones frac){
+                if(frac.esPropia()==true){
+                    if(frac.denom%frac.num==0){
+                            frac.setNum(1);
+                            frac.setDenom(frac.denom/frac.num);
+                            return frac.ToString(); 
+                    }else{
+                        return frac.ToString();
+                    }
+                }else{
+                    if(frac.num%frac.denom==0){
+                        frac.setNum(frac.num/frac.denom);
+                        frac.setDenom(0);
+                        return frac.ToString();
+                    }else{
+                        return frac.ToString();
+                    }
+                }
+
+            }
     }
 
 }
