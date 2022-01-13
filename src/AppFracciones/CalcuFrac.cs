@@ -34,8 +34,8 @@ namespace AppFracciones{
         public void fracReducida(Fracciones frac){
                 if(frac.esPropia()==true){
                     if(frac.denom%frac.num==0){
-                            frac.setNum(1);
                             frac.setDenom(frac.getDenom()/frac.getNum());
+                            frac.setNum(1);
                     }
                 }else{
                     if(frac.num%frac.denom==0){
