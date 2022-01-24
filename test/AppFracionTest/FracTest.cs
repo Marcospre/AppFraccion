@@ -34,10 +34,11 @@ namespace AppFracionTest
         [Fact]
         public void Simplficar()
         {
-            var a=new Fracciones(2,4);
-            String res=calcu.fracReducida(a);
-            Strinf esp="1/2";
-            assert.Equal(res,esp);
+            var res=new Fracciones(2,4);
+            var esp=new Fracciones(1,2);
+            calcu.fracReducida(res);
+            
+            Assert.Equal(res,esp);
             
         }
         [Fact]
@@ -60,6 +61,30 @@ namespace AppFracionTest
             string sfrac1=frac1.ToString();
 
             Assert.Equal(sfrac1,esp);
+        }
+        [Fact]
+        public void divirdirPrueba1()
+        {
+            // Given
+            Fracciones frac1=new Fracciones(1 , 3);
+            Fracciones frac2=new Fracciones( 2, 3);
+            // When
+            Fracciones esperada=new Fracciones( 3, 6);
+            Fracciones res=calcu.dividirFrac(frac1,frac2);
+            // Then
+            assertEqualFrac(res,esperada);
+        }
+        [Theory]
+        [InlineData(1,3,2,3,"3/6")]
+        [InlineData(1,2,2,4,"4/4")]
+        [InlineData(2,5,5,6,"12/25")]
+        public void dividirPrueba2(int num1, int denom1, int num2, int denom2, String esp){
+            Fracciones frac1=new Fracciones(num1,denom1);
+            Fracciones frac2=new Fracciones(num2,denom2);
+
+            Fracciones res=calcu.dividirFrac(frac1,frac2);
+
+            Assert.Equal(res.ToString(),esp);
         }
     }
 }

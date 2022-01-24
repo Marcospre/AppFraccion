@@ -35,7 +35,9 @@ namespace AppFracciones{
                 if(frac.esPropia()==true){
                     if(frac.denom%frac.num==0){
                             frac.setNum(1);
-                            frac.setDenom(frac.getDenom()/frac.getNum());
+                            var num=frac.getNum();
+                            var denom=frac.getDenom();
+                            frac.setDenom(denom/num);
                     }
                 }else{
                     if(frac.num%frac.denom==0){
@@ -44,6 +46,14 @@ namespace AppFracciones{
                     }
                 }
 
+        }
+        public Fracciones dividirFrac (Fracciones frac1, Fracciones frac2){
+            int num=frac2.getDenom()*frac1.getNum();
+            int denom=frac1.getDenom()*frac2.getNum();
+
+            Fracciones frac_divida=new Fracciones(num,denom);
+
+            return frac_divida;
         }
     }
 
