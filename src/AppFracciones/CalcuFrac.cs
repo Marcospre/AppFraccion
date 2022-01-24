@@ -34,10 +34,15 @@ namespace AppFracciones{
         public void fracReducida(Fracciones frac){
                 if(frac.esPropia()==true){
                     if(frac.denom%frac.num==0){
+<<<<<<< HEAD
                             frac.setNum(1);
                             var num=frac.getNum();
                             var denom=frac.getDenom();
                             frac.setDenom(denom/num);
+=======
+                            frac.setDenom(frac.getDenom()/frac.getNum());
+                            frac.setNum(1);
+>>>>>>> b22cf058f2ac64ba8e5dbb784647a34a88c6d079
                     }
                 }else{
                     if(frac.num%frac.denom==0){
